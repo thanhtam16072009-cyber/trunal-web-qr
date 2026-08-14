@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trunal Qr</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <button class="logo" data-page="home">
+        Trunal Qr
+    </button>
+
+    <nav>
+        <button data-page="about">⌾ Giới thiệu</button>
+        <button data-page="hobbies">♡ Sở thích</button>
+        <button data-page="food">♧ Món ăn</button>
+        <button data-page="library">▣ Thư viện</button>
+        <button data-page="music">♫ Âm nhạc</button>
+    </nav>
+
+    <button class="home-button" data-page="home">⌂</button>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     TRANG CHỦ
+===================================================== -->
+
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <div class="hero-text">
+
+            <p class="hello">
+                Chào cậu! 👋
+            </p>
+
+            <!-- MUỐN ĐỔI CÂU NÀY THÌ SỬA Ở ĐÂY -->
+            <h1>
+                Đây là một<br>
+                góc nhỏ của <span>Tâm.</span>
+            </h1>
+
+            <p class="description">
+                Có những điều chẳng có lý do gì để lưu lại,<br>
+                nhưng mình vẫn muốn giữ chúng ở đây.
+            </p>
+
+            <button class="discover" data-page="about">
+                Chọn một mục bên dưới để khám phá ↓
+            </button>
+
+        </div>
+
+
+        <!-- ẢNH AVATAR -->
+        <div class="avatar">
+            <img src="images/avatar.jpg" alt="Ảnh đại diện">
+        </div>
+
+    </div>
+
+
+    <!-- CÁC MỤC TRANG CHỦ -->
+
+    <div class="home-cards">
+
+        <button class="home-card" data-page="about">
+
+            <div class="card-icon purple">♙</div>
+
+            <h3>Giới thiệu</h3>
+
+            <p>
+                Một vài thông tin<br>
+                về mình.
+            </p>
+
+        </button>
+
+
+        <button class="home-card" data-page="hobbies">
+
+            <div class="card-icon pink">♡</div>
+
+            <h3>Sở thích</h3>
+
+            <p>
+                Những thứ làm mình vui,<br>
+                làm mình là mình.
+            </p>
+
+        </button>
+
+
+        <button class="home-card" data-page="food">
+
+            <div class="card-icon orange">♧</div>
+
+            <h3>Món ăn</h3>
+
+            <p>
+                Những món mình<br>
+                thật sự thích.
+            </p>
+
+        </button>
+
+
+        <button class="home-card" data-page="library">
+
+            <div class="card-icon cyan">▣</div>
+
+            <h3>Thư viện</h3>
+
+            <p>
+                Những khoảnh khắc<br>
+                mình muốn giữ lại.
+            </p>
+
+        </button>
+
+
+        <button class="home-card" data-page="music">
+
+            <div class="card-icon violet">♫</div>
+
+            <h3>Âm nhạc</h3>
+
+            <p>
+                Những bài hát gắn với<br>
+                từng khoảng thời gian.
+            </p>
+
+        </button>
+
+    </div>
+
+
+    <!-- NHẠC NHỎ Ở TRANG CHỦ -->
+
+    <div class="mini-player">
+
+        <img src="images/music1.jpg" alt="Ảnh bài hát">
+
+        <div class="mini-info">
+
+            <span>ĐANG PHÁT</span>
+
+            <strong id="miniTitle">
+                Beanie
+            </strong>
+
+            <small id="miniArtist">
+                Chezile
+            </small>
+
+        </div>
+
+        <button id="miniPlay">
+            ▶
+        </button>
+
+        <audio id="miniAudio" src="audio/song.mp3"></audio>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     GIỚI THIỆU
+===================================================== -->
+
+<section id="about" class="page">
+
+    <div class="heading">
+        <h2>Giới thiệu</h2>
+        <p>Một vài thông tin về mình.</p>
+    </div>
+
+    <div class="about-grid">
+
+        <!-- THÔNG TIN -->
+        <div class="glass info-box">
+
+            <!-- Ngày sinh -->
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="17" rx="3"></rect>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>Ngày sinh</small>
+                    <strong>16 / 07 / 2009</strong>
+                </div>
+            </div>
+
+
+            <!-- Chiều cao -->
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 3v18"></path>
+                        <path d="M6 3h5"></path>
+                        <path d="M6 7h4"></path>
+                        <path d="M6 11h5"></path>
+                        <path d="M6 15h4"></path>
+                        <path d="M6 19h5"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>Chiều cao</small>
+                    <strong>1m61</strong>
+                </div>
+            </div>
+
+
+            <!-- Cân nặng -->
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 20h12"></path>
+                        <path d="M8 20l1.5-11h5L16 20"></path>
+                        <path d="M9.5 9a4.5 4.5 0 0 1 5 0"></path>
+                        <path d="M12 12l2-2"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>Cân nặng</small>
+                    <strong>50kg</strong>
+                </div>
+            </div>
+
+
+            <!-- Học tập -->
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 9l9-5 9 5-9 5-9-5z"></path>
+                        <path d="M7 11v5c3 2 7 2 10 0v-5"></path>
+                        <path d="M21 9v7"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>Học tập / Công việc</small>
+                    <strong>Học sinh - Hoàng Hoa Thám</strong>
+                </div>
+            </div>
+
+
+            <!-- Quê quán -->
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"></path>
+                        <circle cx="12" cy="10" r="2.5"></circle>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>Quê quán</small>
+                    <strong>Xã Lệ Ninh, tỉnh Quảng Trị, Việt Nam</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ẢNH + CÂU NÓI -->
+        <div>
+
+            <img
+                class="about-photo"
+                src="images/about.jpg"
+                alt="Ảnh giới thiệu"
+            >
+
+            <div class="glass quote">
+
+                <span>“</span>
+
+                <p>
+                    Mình không giỏi ở nhiều thứ,<br>
+                    nhưng mình luôn muốn cố gắng mỗi ngày<br>
+                    để trở thành phiên bản tốt hơn.
+                </p>
+
+                <i>☆</i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button class="back" data-page="home">
+        ← Quay lại
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     SỞ THÍCH
+===================================================== -->
+
+<section id="hobbies" class="page">
+
+    <div class="heading">
+
+        <h2>Sở thích</h2>
+
+        <p>
+            Những thứ làm mình vui, làm mình là mình.
+        </p>
+
+    </div>
+
+
+    <div class="story-list">
+
+
+        <!-- SỞ THÍCH 1 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/hobby1.jpg"
+                alt="Sở thích 1"
+            >
+
+            <div class="story-content">
+
+                <span>01</span>
+
+                <!-- ĐỔI TÊN SỞ THÍCH Ở ĐÂY -->
+                <h3>
+                    Chơi cầu lông
+                </h3>
+
+                <!-- ĐỔI MÔ TẢ Ở ĐÂY -->
+                <p>
+                    Mình thích chơi cầu lông vì nó giúp mình
+                    vận động và có thêm năng lượng.
+                </p>
+
+
+                <!-- ẢNH BẢN THÂN -->
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/hobby1-me.jpg"
+                        alt="Ảnh mình đang làm sở thích"
+                    >
+
+                   
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SỞ THÍCH 2 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/hobby2.jpg"
+                alt="Sở thích 2"
+            >
+
+            <div class="story-content">
+
+                <span>02</span>
+
+                <h3>
+                    Câu cá
+                </h3>
+
+                <p>
+                    Mình thích đi câu vì nó chill phết
+                </p>
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/hobby2-me.jpg"
+                        alt="Ảnh mình đang câu cá"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SỞ THÍCH 3 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/hobby3.jpg"
+                alt="Sở thích 3"
+            >
+
+            <div class="story-content">
+
+                <span>03</span>
+
+                <h3>
+                    Tìm tòi cách kiếm tiền
+                </h3>
+
+                <p>
+                    Rất yêu tiền
+                </p>
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/hobby3-me.jpg"
+                        alt="Ảnh mình đang làm nội dung"
+                    >
+
+                   
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <button class="back" data-page="home">
+        ← Quay lại
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     MÓN ĂN
+===================================================== -->
+
+<section id="food" class="page">
+
+    <div class="heading">
+
+        <h2>Món ăn</h2>
+
+        <p>
+            Những món mình thích, đôi khi chỉ vì hôm đó thấy ngon.
+        </p>
+
+    </div>
+
+
+    <div class="story-list">
+
+
+        <!-- MÓN 1 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/food1.jpg"
+                alt="Món ăn 1"
+            >
+
+            <div class="story-content">
+
+                <span>01</span>
+
+                <h3>
+                    Thịt kho tàu
+                </h3>
+
+                <p>
+                    Ngon vãiii
+                </p>
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/food1-me.jpg"
+                        alt="Ảnh của mình với món ăn"
+                    >
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MÓN 2 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/food2.jpg"
+                alt="Món ăn 2"
+            >
+
+            <div class="story-content">
+
+                <span>02</span>
+
+                <h3>
+                    Gà rán
+                </h3>
+
+                <p>
+                    Jollibee, kfc gì cũng đớp
+                </p>
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/food2-me.jpg"
+                        alt="Ảnh của mình với món ăn"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MÓN 3 -->
+
+        <article class="story glass">
+
+            <img
+                src="images/food3.jpg"
+                alt="Món ăn 3"
+            >
+
+            <div class="story-content">
+
+                <span>03</span>
+
+                <h3>
+                    Sườn
+                </h3>
+
+                <p>
+                    Rất thích thịt, đặc biệt là sườn
+                </p>
+
+                <div class="my-picture">
+
+                    <img
+                        src="images/food3-me.jpg"
+                        alt="Ảnh của mình với món ăn"
+                    >
+
+                   
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <button class="back" data-page="home">
+        ← Quay lại
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     THƯ VIỆN
+===================================================== -->
+
+<section id="library" class="page">
+
+    <div class="heading">
+
+        <h2>Thư viện</h2>
+
+        <p>
+            Một vài thứ mình muốn giữ lại.
+        </p>
+
+    </div>
+
+
+    <div class="library glass">
+
+        <button
+            class="gallery-button left"
+            id="prevPhoto"
+        >
+            ‹
+        </button>
+
+
+        <div class="gallery-window">
+
+            <div
+                class="gallery-track"
+                id="galleryTrack"
+            >
+
+
+                <!-- ẢNH 1 -->
+
+                <article class="gallery-item">
+
+                    <img
+                        src="images/library1.jpg"
+                        alt="Thư viện 1"
+                    >
+
+                    <div>
+
+                       
+
+                        <h3>
+                            Trời đẹp
+                        </h3>
+
+                        <p>
+                            Lần đầu đi chơi như này
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ẢNH 2 -->
+
+                <article class="gallery-item">
+
+                    <img
+                        src="images/library2.jpg"
+                        alt="Thư viện 2"
+                    >
+
+                    <div>
+
+                     
+                        <h3>
+                            Ngầu ngầu
+                        </h3>
+
+                        <p>
+                            Đang suy
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ẢNH 3 -->
+
+                <article class="gallery-item">
+
+                    <img
+                        src="images/library3.jpg"
+                        alt="Thư viện 3"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Thắp chuỗi
+                        </h3>
+
+                        <p>
+                            Có ảnh lửa để rep chuỗi
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ẢNH 4 -->
+
+                <article class="gallery-item">
+
+                    <img
+                        src="images/library4.jpg"
+                        alt="Thư viện 4"
+                    >
+
+                    <div>
+
+
+                        <h3>
+                            Đường chạy bộ
+                        </h3>
+
+                        <p>
+                            Chạy bộ buổi sáng, trời mát, gió thổi
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ẢNH 5 -->
+
+                <article class="gallery-item">
+
+                    <img
+                        src="images/library5.jpg"
+                        alt="Thư viện 5"
+                    >
+
+                    <div>
+
+                        <small>
+                            05 · 20/07/2026
+                        </small>
+
+                        <h3>
+                            Nốt ảnh đi chơi
+                        </h3>
+
+                        <p>
+                            Chill phết chứ đùa
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="gallery-button right"
+            id="nextPhoto"
+        >
+            ›
+        </button>
+
+
+        <div
+            class="gallery-dots"
+            id="galleryDots"
+        ></div>
+
+    </div>
+
+
+    <button class="back" data-page="home">
+        ← Quay lại
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     ÂM NHẠC
+===================================================== -->
+
+<section id="music" class="page">
+
+    <div class="heading">
+
+        <h2>Âm nhạc</h2>
+
+        <p>
+            Những bài hát gắn liền với từng khoảng thời gian.
+        </p>
+
+    </div>
+
+
+    <div class="music-box glass">
+
+
+        <!-- DANH SÁCH BÀI -->
+
+        <aside class="playlist">
+
+            <h3>
+                Danh sách
+            </h3>
+
+
+            <button
+                class="song active"
+                data-song="0"
+            >
+
+                <span>01</span>
+
+                <div>
+
+                    <b>
+                        Beanie
+                    </b>
+
+                    <small>
+                        Chezile
+                    </small>
+
+                </div>
+
+            </button>
+
+
+            <button
+                class="song"
+                data-song="1"
+            >
+
+                <span>02</span>
+
+                <div>
+
+                    <b>
+                        Daylight
+                    </b>
+
+                    <small>
+                        David Kushner
+                    </small>
+
+                </div>
+
+            </button>
+
+
+            <button
+                class="song"
+                data-song="2"
+            >
+
+                <span>03</span>
+
+                <div>
+
+                    <b>
+                        Người tình mùa đông
+                    </b>
+
+                    <small>
+                        Hà Anh Tuấn
+                    </small>
+
+                </div>
+
+            </button>
+
+
+            <button
+                class="song"
+                data-song="3"
+            >
+
+                <span>04</span>
+
+                <div>
+
+                    <b>
+                        Tíc tắc x 25
+                    </b>
+
+                    <small>
+                        Táo x Bray
+                    </small>
+
+                </div>
+
+            </button>
+
+        </aside>
+
+
+
+        <!-- TRÌNH PHÁT -->
+
+        <div class="music-player">
+
+            <div class="album">
+
+                <img
+                    id="albumImage"
+                    src="images/music1.jpg"
+                    alt="Ảnh album"
+                >
+
+                <div class="vinyl"></div>
+
+            </div>
+
+
+            <span class="now">
+                NOW PLAYING
+            </span>
+
+
+            <h2 id="songTitle">
+                Beanie
+            </h2>
+
+
+            <p id="songArtist">
+                DA LAB
+            </p>
+
+
+            <audio
+                id="mainAudio"
+                src="audio/song.mp3"
+            ></audio>
+
+
+            <input
+                id="progress"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+            >
+
+
+            <div class="time">
+
+                <span id="current">
+                    00:00
+                </span>
+
+                <span id="total">
+                    00:00
+                </span>
+
+            </div>
+
+
+            <div class="music-controls">
+
+                <button id="previous">
+                    ◀
+                </button>
+
+                <button
+                    id="play"
+                    class="main-play"
+                >
+                    ▶
+                </button>
+
+                <button id="next">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <div class="volume">
+
+                🔈
+
+                <input
+                    id="volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.8"
+                >
+
+                🔊
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button class="back" data-page="home">
+        ← Quay lại
+    </button>
+
+</section>
+
+</main>
+
+
+<footer>
+    Trunal Qr · Một góc nhỏ của Tâm ✦
+</footer>
+
+
+<div id="ripple"></div>
+
+</body>
+</html>
